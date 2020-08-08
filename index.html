@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Scrollytelling Template</title>
+    <title>History On Your Doorstep: Jazz Corner</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
@@ -12,10 +12,11 @@
         body {
             margin:0;
             padding:0;
-            font-family: sans-serif;
+            font-family: harriet,serif;
+                line-height: 1.55;
         }
         a, a:hover, a:visited {
-            color: #0071bc;
+            color: #ffffcc;
         }
         #map {
             top:0;
@@ -52,19 +53,41 @@
             width: 100vw;
             /* margin-left: 5vw; */
         }
-    #krentzman, #operaHouse-text, #nec-text, #arcadia-text, #raymor-text, #symphony-text, #afm-text{
-        width: 35vw;
-        margin-left: 55vw;
 
+        h2 {
+          color: #ffffcc;
         }
+        h2, h3 {
+          font-family: sans-serif;
+          margin-top: .5em;
+          margin-bottom: .5em;
+        }
+#operaHouse-text, #nec-text, #arcadia-text, #raymor-text, #symphony-text, #afm-text{
+        width: 38vw;
+        margin-left: 5vw;
+    margin-bottom: 27em;
+    font-size: 1.1em;
+        }
+#krentzman-supp {
+        width: 38vw;
+        margin-left: 5vw;
+    margin-bottom: 27em;
+    font-size: 1.1em;
+  margin-top: -50em;
+        }
+        #krentzman {
+          width: 38vw;
+          margin-left: 55vw;
+    margin-bottom: 0em;
+            }
     #operaHouse-supp {
       width: 38vw;
-      margin-left: 5vw;
-      margin-top: -130em;
+      margin-left: 55vw;
+      margin-top: -150em;
         }
 #nec-supp, #arcadia-supp, #raymor-supp, #symphony-supp, #afm-supp {
           width: 38vw;
-          margin-left: 5vw;
+          margin-left: 55vw;
           margin-top: -50vw;
             }
       #leftSide{
@@ -84,10 +107,10 @@ div.mediaThree {
  margin-top: -90px; */
 }
 .mediaCaption {
-color: #ffffcc;
 font-size: .8em;
 line-height: 1.5em;
-margin: 0em 0em 1em 0em;}
+margin: 0em 0em 1em 0em;
+font-family: sans-serif;}
 
   .iframe-container{
           position: relative;
@@ -104,7 +127,14 @@ margin: 0em 0em 1em 0em;}
           height: 100%;
         }
 
-
+        .stopNumber {
+        border-radius: 50%;
+        padding: 8px 13px 8px 13px;
+        background: #e84040;
+        color: #fff;
+        text-align: center;
+        margin-right: 10px;
+    }
         .righty {
           width: 100vw;
         }
@@ -114,7 +144,8 @@ margin: 0em 0em 1em 0em;}
         }
         .dark {
             color: #fafafa;
-            background-color: rgba(17,17,17,0.5);
+            background-color: rgba(17,17,17,0.4);
+                border-radius: 0px 50px;
         }
         .step {
             padding-bottom: 50vh;
@@ -151,6 +182,19 @@ p.quote {
                 width: 90vw;
                 margin: 0 auto;
             }
+          #krentzman, #operaHouse-text, #nec-text, #arcadia-text, #raymor-text, #symphony-text, #afm-text {
+    width: 100%;
+    margin-left: 0vw;
+}
+#operaHouse-supp, #nec-supp, #arcadia-supp, #raymor-supp, #symphony-supp, #afm-supp {
+  width: 100%;
+  margin-left: 0vw;
+          margin-top: 0vw;
+            }
+.step {
+padding-bottom: 15vh;
+opacity: 0.9;
+}
         }
         </style>
 </head>
@@ -201,8 +245,8 @@ if (config.title) {
 }
 
 if (config.subtitle) {
-    var subtitleText = document.createElement('h2');
-    subtitleText.innerText = config.subtitle;
+    var subtitleText = document.createElement('p');
+    subtitleText.innerHTML = config.subtitle;
     header.appendChild(subtitleText);
 }
 
@@ -224,7 +268,7 @@ config.chapters.forEach((record, idx) => {
 
     if (record.title) {
         var title = document.createElement('h3');
-        title.innerText = record.title;
+        title.innerHTML = record.title;
         chapter.appendChild(title);
     }
 

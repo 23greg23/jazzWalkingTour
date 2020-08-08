@@ -4,10 +4,10 @@ var config = {
     showMarkers: true,
     theme: 'dark',
     alignment: 'right',
-    title: 'The Title Text of this Story',
-    subtitle: 'A descriptive and interesting subtitle to draw in the reader',
-    byline: 'By a Digital Storyteller',
-    footer: 'Source: source citations, etc.',
+    title: 'History on your doorstep: Boston\'s Jazz Corner',
+    subtitle: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.<div id="leftSide"><img src="images/route.jpg"><ol class="routeList"><li>Boston Opera House</li><li>New England Conservatory of Music</li><li>Arcadia Ballroom</li></ol></div>',
+    byline: '',
+    footer: 'All photos courtesy of Northeastern University Archives and Special Collections or Wikipedia Commons unless otherwise noted.',
     chapters: [
         {
             id: 'krentzman',
@@ -26,9 +26,9 @@ var config = {
 
         {
             id: 'operaHouse-text',
-            title: '343 Huntington Avenue',
+            title: '<span class="stopNumber">1</span>343 Huntington Avenue',
             image: 'images/venueAddress-directories/Huntington/343 Huntington/before_after.jpg',
-            description: '<h2>Boston Opera House</h2><h3>1909-1957</h3><p>While not a jazz venue per se, The Boston Opera House hosted many jazz events in its relatively short tenure on Huntington Ave. Opened in 1909 and touted as another jewel in Boston’s crown of the arts along with Symphony Hall and The Boston Public Library, it was the home of the Boston Opera Company who were arch competitors of New York’s Metropolitan Opera Company. When the Boston Opera Company went bankrupt in 1915, the venue began hosting events by other companies (including the Met) and even made forays into popular music and theater. It was during these later years that the Opera House saw many jazz events on its stage including the world premiere of Duke Ellington’s afro-centric retelling of The Beggars Opera, a classic satire from the 18th century. While Ellington’s musical (entitled Twilight Alley, aka Beggar’s Holiday) was not well received by critics, it featured an impressive cast and crew including director John Houseman and actor Zero Mostel and was revolutionary for its day in casting African-American actors in the lead roles and featuring an inter-racial romance at the heart of the story.<div class="iframe-container"><iframe src="https://www.youtube.com/embed/UZlUEpANShA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>Other popular stars such as Bill “Bojangles” Robinson and Sidney Bechet made appearances throughout the 1940s but the Opera House eventually fell into disuse and disrepair and was demolished in the 1950s. All that remains today is the street name Opera Place which runs from Huntington Avenue along the east wall of Speare Hall.</p>',
+            description: '<h2>Boston Opera House</h2><h3>1909-1957</h3><p>While not a jazz venue per se, The Boston Opera House hosted many jazz events in its relatively short tenure on Huntington Ave. Opened in 1909 and touted as another jewel in Boston’s crown of the arts along with Symphony Hall and The Boston Public Library, it was the home of the Boston Opera Company who were arch competitors of New York’s Metropolitan Opera Company. When the Boston Opera Company went bankrupt in 1915, the venue began hosting events by other companies (including the Met) and even made forays into popular music and theater. It was during these later years that the Opera House saw many jazz events on its stage including the world premiere of <a href="https://en.wikipedia.org/wiki/Duke_Ellington">Duke Ellington</a>’s afro-centric retelling of The Beggars Opera, a classic satire from the 18th century. While Ellington’s musical (entitled <a href="https://www.troystreet.com/tspots/2013/12/06/dec-6-1946-the-mavericks-in-twilight-alley/">Twilight Alley</a>, aka Beggar’s Holiday) was not well received by critics, it featured an impressive cast and crew including director <a href="https://www.imdb.com/name/nm0002144/">John Houseman</a> and actor <a href="https://www.imdb.com/name/nm0609216">Zero Mostel</a> and was revolutionary for its day in casting African-American actors in the lead roles and featuring an inter-racial romance at the heart of the story.<div class="iframe-container"><iframe src="https://www.youtube.com/embed/UZlUEpANShA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>Other popular stars such as <a href="https://en.wikipedia.org/wiki/Bill_Robinson">Bill “Bojangles” Robinson</a> and <a href="https://www.britannica.com/biography/Sidney-Bechet">Sidney Bechet</a> made appearances throughout the thirties and forties but the Opera House eventually fell into disuse and disrepair and was demolished in the 1950s. All that remains today is the street name Opera Place which runs from Huntington Avenue along the east wall of Speare Hall.</p>',
 
             location: {
                 center: [-71.08896, 42.34043],
@@ -41,7 +41,7 @@ var config = {
         },
         {
             id: 'operaHouse-supp',
-            description: '<div id="leftSide"><div class="mediaOne"><img src="images/venueAddress-directories/Huntington/343 Huntington/Huntington_Avenue_Grounds.jpg"><p class="mediaCaption">Looking north towards Huntington Avenue from the Northeastern campus circa 1911. In the foreground are the Huntington Avenue Grounds–original home of the Boston Red Sox–where the Cabot Center stands today. In the background, to the right, is the Boston Storage Warehouse (current site of the Marino Center) and to the left is the Boston Opera House (current site of Speare Hall). Photo courtesy of Wikimedia Commons.</p></div><div class="mediaTwo"><img src="images/venueAddress-directories/Huntington/343 Huntington/operaHseDemo.png"><p class="mediaCaption">Demolition of the Boston Opera House and construction of Speare Hall in 1958. Fun fact: A single brick was saved from the demolition by Boston radio personality and music historian, Ron Della Chiasa, and currently resides in Snell Library as part of Northeastern University Archives and Special Collections! Photos courtesy of Northeastern University Archives and Special Collections.</p></div></div>',
+            description: '<div id="leftSide"><div class="mediaOne"><img src="images/venueAddress-directories/Huntington/343 Huntington/Huntington_Avenue_Grounds.jpg"><p class="mediaCaption">Looking north towards Huntington Avenue from the Northeastern campus circa 1911. In the foreground are the Huntington Avenue Grounds–original home of the Boston Red Sox–where the Cabot Center stands today. In the background, to the right, is the Boston Storage Warehouse (current site of the Marino Center) and to the left is the Boston Opera House (current site of Speare Hall). Photo courtesy of Wikimedia Commons.</p></div><div class="mediaTwo"><img src="images/venueAddress-directories/Huntington/343 Huntington/operaHseDemo.png"><p class="mediaCaption">Demolition of the Boston Opera House and construction of Speare Hall in 1958. Fun fact: A single brick was saved from the demolition by Boston radio personality and music historian, <a href="https://www.classicalwcrb.org/people/ron-della-chiesa#stream/0">Ron Della Chiasa</a>, and currently resides in Snell Library as part of Northeastern University Archives and Special Collections. Photos courtesy of Northeastern University Archives and Special Collections.</p></div></div>',
             location: {
                 center: [-71.08896, 42.34043],
                 zoom: 16,
@@ -53,9 +53,9 @@ var config = {
         },
         {
             id: 'nec-text',
-            title: '290 Huntington Avenue',
-            image: 'http://huskynunews.wpengine.com/interactive/walkingTour1/venueAddress-directories/MassAve/199/today.jpg',
-            description: '<h2>New England Conservatory of Music</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            title: '<span class="stopNumber">2</span>3290 Huntington Avenue',
+            image: 'images/venueAddress-directories/Huntington/290huntington/before_after.jpg',
+            description: '<h2>New England Conservatory of Music</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
                 center: [-71.08656, 42.34116],
                 zoom: 16,
@@ -67,7 +67,7 @@ var config = {
         },
         {
             id: 'nec-supp',
-            description: '<div id="leftSide">additional media goes here</div>',
+            description: '<div id="leftSide"><div class="mediaOne"><img src="images/venueAddress-directories/Huntington/290huntington/jordanHallInt.jpg"><p class="mediaCaption">Jordan Hall. Photo courtesy of Wikimedia Commons.</p></div><div class="mediaTwo"><div class="iframe-container"><iframe src="https://www.youtube.com/embed/bTsuT0EgGio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p class="mediaCaption">Third Stream Music: The Modern Jazz Quartet & Guests. Gunther Schiller, conducting.</div></div></div>',
             location: {
                 center: [-71.08656, 42.34116],
                 zoom: 16,
@@ -81,7 +81,7 @@ var config = {
             id: 'arcadia-text',
             title: '252-254 Huntington Avenue',
             image: 'http://huskynunews.wpengine.com/interactive/walkingTour1/venueAddress-directories/MassAve/199/today.jpg',
-            description: '<h2>Arcadia Ballroom</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: '<h2>Arcadia Ballroom</h2><h3>dates</h3><h2>Showboat</h2><h3>dates<h3/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
                 center: [-71.08656, 42.34116],
                 zoom: 16,
