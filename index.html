@@ -29,14 +29,13 @@
             margin: 3vh auto;
             width: 90vw;
             padding: 2vh;
-            text-align: center;
+            text-align: left;
         }
         #footer {
             width: 100%;
             min-height: 5vh;
             padding-top: 2vh;
             padding-bottom: 2vh;
-            text-align: center;
             line-height: 25px;
             font-size: 13px;
         }
@@ -44,6 +43,13 @@
             padding-top: 10vh;
             padding-bottom: 10vh;
             z-index: 100;
+        }
+        #clear {
+          clear: both;
+          padding: 0em;
+        }
+        .photoBorder {
+          border: 1px solid #ccc;
         }
         .centered {
             width: 50vw;
@@ -57,42 +63,79 @@
         h2 {
           color: #ffffcc;
         }
-        h2, h3 {
+        h1, h2, h3 {
           font-family: sans-serif;
           margin-top: .5em;
           margin-bottom: .5em;
         }
+        p.intro {
+          padding: 0em 2em 0em 2em;
+    line-height: 1.7em;
+    font-size: 1.2em;
+        }
+#krentzman {
+  width: 60%;
+  margin: 0 auto;
+background-color: #666;
+  padding: 1em;
+  margin-bottom: 4em;
+  margin-top: -4em;
+
+}
+#leftSide{
+padding: 0em;
+  }
+div.topKey{
+display: block;
+padding: 0em;
+font-size: 1em;
+    }
+div.topKey .leftIntro {
+width: 43%;
+margin-right: 4em;
+float: left;
+padding: 0em;
+font-size: 1em;
+    }
+    div.topKey .rightIntro {
+    width: 43%;
+    float: left;
+    padding: 0em;
+    font-size: 1em;
+        }
+div.rightIntro ol.routeList {
+        font-size: 1em;
+        color: #ffffcc;
+        line-height: 1.5em;
+        margin: 0em 0em 1em 0em;
+        font-family: sans-serif;}
 #operaHouse-text, #nec-text, #arcadia-text, #raymor-text, #symphony-text, #afm-text{
-        width: 38vw;
-        margin-left: 5vw;
-    margin-bottom: 27em;
-    font-size: 1.1em;
+width: 38vw;
+margin-left: 5vw;
+margin-bottom: 1em;
+font-size: 1.1em;
         }
-#krentzman-supp {
-        width: 38vw;
-        margin-left: 5vw;
-    margin-bottom: 27em;
-    font-size: 1.1em;
-  margin-top: -50em;
+#operaHouse-supp, #nec-supp, #arcadia-supp, #raymor-supp, #symphony-supp, #afm-supp {
+width: 38vw;
+margin-left: 55vw;
+float: left;
+margin-bottom: 0em;
         }
-        #krentzman {
-          width: 38vw;
-          margin-left: 55vw;
-    margin-bottom: 0em;
-            }
-    #operaHouse-supp {
-      width: 38vw;
-      margin-left: 55vw;
-      margin-top: -150em;
-        }
-#nec-supp, #arcadia-supp, #raymor-supp, #symphony-supp, #afm-supp {
-          width: 38vw;
-          margin-left: 55vw;
-          margin-top: -50vw;
-            }
-      #leftSide{
-          padding: 0em;
-        }
+#operaHouse-supp {margin-top: -120em;}
+#nec-supp {margin-top: -120em;}
+#arcadia-supp {margin-top: -130em;}
+#symphony-supp {margin-top: -110em;}
+#afm-supp {margin-top: -90em;}
+.dark {
+color: #fafafa;
+background-color: rgba(17,17,17,0.4);
+border-radius: 0px 50px;
+}
+#operaHouse-supp.step div.dark, #nec-supp.step div.dark, #arcadia-supp.step div.dark, #symphony-supp.step div.dark, #afm-supp.step div.dark {
+background-color: rgba(17,17,17,0);
+}
+
+
         div.mediaOne {
           padding: 0em!important;
         /* margin-left: -60px; */
@@ -107,9 +150,9 @@ div.mediaThree {
  margin-top: -90px; */
 }
 .mediaCaption {
-font-size: .8em;
+font-size: .7em;
 line-height: 1.5em;
-margin: 0em 0em 1em 0em;
+margin: 0em 0em 2em 0em;
 font-family: sans-serif;}
 
   .iframe-container{
@@ -117,7 +160,7 @@ font-family: sans-serif;}
           /* width: 100%; */
           padding-bottom: 56.25%!important;
           height: 0;
-          margin-bottom:1em;
+          margin:1em 0em 1em 0em;
         }
         .iframe-container iframe{
           position: absolute;
@@ -142,13 +185,9 @@ font-family: sans-serif;}
             color: #444;
             background-color: #fafafa;
         }
-        .dark {
-            color: #fafafa;
-            background-color: rgba(17,17,17,0.4);
-                border-radius: 0px 50px;
-        }
+
         .step {
-            padding-bottom: 50vh;
+            /* padding-bottom: 50vh; */
             /* margin-bottom: 10vh; */
             opacity: 0.9;
         }
@@ -159,7 +198,7 @@ font-family: sans-serif;}
         .step div {
             padding:  2em;
             line-height: 1.7em;
-            font-size: 1em;
+            font-size: 1.1em;
         }
 
         .step img {
@@ -167,35 +206,87 @@ font-family: sans-serif;}
         }
 
 p.quote {
-  width: 80%;
-      margin: 0 auto;
-      font-style: italic;
-      color: #ffffcc;
-      padding: 1.5em;
+width: 90%;
+margin: 0 auto;
+font-style: italic;
+color: #ffffcc;
+padding: 1.5em;
+font-size: 1.3em;
 }
 .byline{
   float: right;
   color: #ffcc66;
 }
-        @media (max-width: 750px) {
-            #features {
-                width: 90vw;
-                margin: 0 auto;
+
+#furtherReading {
+    width: 80%;
+    margin: 0 auto;
+}
+#furtherReading ul li div.leftExtra {
+width: 15%;
+margin-right: 4em;
+float: left;
+padding: 0em;
+    }
+.leftExtra img {
+width: 100%;
+    }
+#furtherReading ul li div.rightExtra {
+    width: 80%;
+    float: left;
+    padding: 0em;
+        }
+#furtherReading ul li {
+  clear: both;
+}
+@media (max-width: 1920px) {
+#krentzman {
+width: 80%;
+}
+@media (max-width: 950px) {
+#krentzman {
+width: 90%;
+}
+div.topKey .leftIntro {
+margin-right: 2em;
+    }
+@media (max-width: 768px) {
+#features {
+width: 90vw;
+margin: 0 auto;
             }
-          #krentzman, #operaHouse-text, #nec-text, #arcadia-text, #raymor-text, #symphony-text, #afm-text {
-    width: 100%;
-    margin-left: 0vw;
+.step div {
+padding: 1em;
+}
+#krentzman {
+width: 100%;
+margin-left: -15px;
+}
+#operaHouse-text, #nec-text, #arcadia-text, #raymor-text, #symphony-text, #afm-text {
+width: 100%;
+margin-left: 0vw;
+float: left;
+margin-top: 0em;
 }
 #operaHouse-supp, #nec-supp, #arcadia-supp, #raymor-supp, #symphony-supp, #afm-supp {
-  width: 100%;
-  margin-left: 0vw;
-          margin-top: 0vw;
-            }
+width: 100%;
+margin-left: 0vw;
+float: left;
+margin-top: 0em;
+}
 .step {
 padding-bottom: 15vh;
 opacity: 0.9;
 }
-        }
+@media (max-width: 550px) {
+  #krentzman {
+  width: 100%;
+  }
+  div.topKey .leftIntro, div.topKey .rightIntro {
+    width: 100%;
+      }
+    }
+
         </style>
 </head>
 <body>
@@ -376,4 +467,5 @@ window.addEventListener('resize', scroller.resize);
 </script>
 
 </body>
+
 </html>
